@@ -2,16 +2,71 @@
     text-decoration: none;
     color: #f5f6f7aa;
     border: 1px solid #f5f6f799;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem;
     border-radius: 20px;
-    transition: 0.5s ease-in-out;
-    width: 10rem;
+    width: 15%;
     height: auto;
     text-align: center;
+    margin: 2%;
 }
 
 .navBtn:hover {
     background-color: #f5f6f7dd;
     color: #3c3c64
+}
+
+
+
+@media only screen and (max-width:480px) {
+
+    /* phone */
+    .navBtn {
+        text-decoration: none;
+        color: #f5f6f7aa;
+        border: 1px solid #f5f6f799;
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 20px;
+        width: 100px;
+        height: auto;
+        text-align: center;
+        margin: 2%;
+    }
+
+    .navBtn:hover {
+        background-color: #f5f6f7dd;
+        color: #3c3c64
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width: 599px) {
+
+    /* tablet or big phone */
+
+}
+
+@media only screen and (min-width:600px) and (max-width: 767px) {
+
+    /* tablet */
+
+
+}
+
+@media only screen and (min-width:992px) and (max-width: 1199px) {
+
+    /* laptop */
+
+
+}
+
+@media only screen and (min-width:1200px) and (max-width: 1919px) {
+    /* desktopscreen */
+
+
+}
+
+@media only screen and (min-width:1920px) {
+    /*  big desktops or highdef */
+
 }

@@ -1,0 +1,17 @@
+.navBtn {
+    text-decoration: none;
+    color: #f5f6f7aa;
+    border: 1px solid #f5f6f799;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    width: 10rem;
+    height: auto;
+    text-align: center;
+}
+
+.navBtn:hover {
+    background-color: #f5f6f7dd;
+    color: #3c3c64
+}

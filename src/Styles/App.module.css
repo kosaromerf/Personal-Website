@@ -1,0 +1,78 @@
+.main {
+    height: 100vh;
+}
+
+
+.welcomeText {
+    font-size: 1.3rem;
+    color: aliceblue;
+    width: 70%;
+    text-align: center;
+}
+
+.main img {
+    max-width: 300px;
+    width: 30vw;
+    border-radius: 50%;
+    outline: green solid 4px;
+    margin-bottom: 5%;
+
+}
+
+
+@media only screen and (max-width:480px) {
+
+    /* phone */
+
+    .welcomeText {
+        font-size: 1rem;
+        color: aliceblue;
+        width: 70%;
+        text-align: center;
+
+    }
+
+
+}
+
+@media only screen and (min-width:480px) and (max-width: 599px) {
+
+    /* tablet or big phone */
+
+
+    .welcomeText {
+        font-size: 1.2rem;
+        color: aliceblue;
+        width: 70%;
+        text-align: center;
+
+
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width: 767px) {
+
+    /* tablet */
+
+
+}
+
+
+
+@media only screen and (min-width:992px) and (max-width: 1199px) {
+
+    /* laptop */
+
+
+}
+
+@media only screen and (min-width:1200px) and (max-width: 1919px) {
+    /* desktopscreen */
+
+
+}
+
+@media only screen and (min-width:1920px) {
+    /*  big desktops or highdef */
+
+}

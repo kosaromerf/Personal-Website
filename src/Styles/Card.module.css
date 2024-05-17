@@ -1,0 +1,73 @@
+.cardBody {
+    height: 95%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 3fr 2fr 2fr 1fr 1fr;
+}
+
+
+.cardImg {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.cardName {
+    font-size: 1.5rem;
+    padding: 0 2%;
+    text-align: center;
+    color: white;
+    align-self: center;
+    justify-self: center;
+}
+
+.cardContent {
+    text-align: center;
+    color: #d0d0d0;
+    align-self: center;
+    justify-self: center;
+    padding: 0 2%;
+}
+
+.codeLink {
+    text-decoration: none;
+    background-color: #0a0c10bb;
+    text-align: center;
+    width: 50%;
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.1rem;
+    color: #f0f0f0;
+
+    padding: 1%;
+    transition: 0.3s ease-in-out;
+}
+
+.codeLink:hover {
+    background-color: #0a0c10;
+    transform: scale(1.1);
+    font-weight: 900;
+
+}
+
+.liveLink {
+    text-decoration: none;
+    background-color: #dc143cbb;
+    text-align: center;
+    width: 50%;
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    padding: 1%;
+    transition: 0.3s ease-in-out;
+}
+
+.liveLink:hover {
+    background-color: #dc143c;
+    transform: scale(1.1);
+    font-weight: 900;
+
+}

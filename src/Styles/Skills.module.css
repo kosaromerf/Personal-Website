@@ -1,3 +1,43 @@
+.skillContainer {
+    border: 3px solid gray;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.core h4,
+.secondary h4 {
+    margin-bottom: 2%;
+    font-size: 2rem;
+    color: white;
+}
+
+.core,
+.secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.core ul,
+.secondary ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    width: 80%;
+}
+
+.skillContainer li {
+    list-style: none;
+}
+
+
+
 @media only screen and (max-width:480px) {
 
     /* phone */

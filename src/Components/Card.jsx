@@ -1,19 +1,44 @@
 import React from "react";
 import styles from "../Styles/Card.module.css";
-import image1 from "../assets/placeholder/name1.jpg";
+import { useState } from "react";
+import Modal from "./Modal";
 
-const Card = ({ image, name, content, codeLink, liveLink }) => {
+const Card = ({ images, name, content, codeLink, liveLink }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
   return (
     <div className={styles.cardBody}>
-      <img src={image1} alt="projectimages" className={styles.cardImg} />
+      <img
+        src={images[0]}
+        alt="projectimages"
+        className={styles.cardImg}
+        onClick={openModal}
+      />
       <h4 className={styles.cardName}>{name}</h4>
       <p className={styles.cardContent}>{content}</p>
       <a href={codeLink} className={styles.codeLink}>
-        github
+        GitHub
       </a>
       <a href={liveLink} className={styles.liveLink}>
-        preview
+        Live
       </a>
+      <div>
+        <Modal
+          images={images}
+          name={name}
+          content={content}
+          codeLink={"#"}
+          liveLink={"#"}
+          isOpen={isOpen}
+          closeModal={closeModal}
+        />
+      </div>
     </div>
   );
 };

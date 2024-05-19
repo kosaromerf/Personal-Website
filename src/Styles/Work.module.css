@@ -1,12 +1,23 @@
+.work {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 .container {
-    width: 70%;
-    height: 60%;
+    width: 70vw;
+    height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3%;
-    padding: 0% 2% 0% 2%;
     align-items: center;
-    border: 1px dashed red;
+
+}
+
+.projects {
+    font-size: 3rem;
+    color: #f0f0f0;
+    margin-bottom: 1rem;
 }
 
 

@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #3c3c64;
+
 }
 
 #root>div {
@@ -13,4 +13,5 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
+  background-color: #0a0a23;
 }

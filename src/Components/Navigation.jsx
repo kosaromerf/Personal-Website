@@ -8,7 +8,6 @@ const Navigation = () => {
       <NavButton to="/" content="Home" />
       <NavButton to="/skills" content="Skills" />
       <NavButton to="/work" content="Work" />
-      <NavButton to="/contact" content="Contact" />
     </nav>
   );
 };

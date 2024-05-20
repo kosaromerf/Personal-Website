@@ -2,6 +2,7 @@ import React from "react";
 import Navigation from "./Navigation";
 import styles from "../Styles/Work.module.css";
 import Card from "./Card";
+import Contact from "./Contact";
 import image1 from "../assets/placeholder/name1.jpg";
 import image2 from "../assets/placeholder/name2.jpg";
 import image3 from "../assets/placeholder/name3.jpg";
@@ -44,6 +45,9 @@ const Work = () => {
         />
       </section>
       <Navigation />
+      <div className={styles.contactContainer}>
+        <Contact />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    align-items: center;
+    background-color: black;
+    padding: 0;
+    justify-content: space-between;
+    width: 10vw;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transform: translateX(6.5vw);
+    transition: 0.5s ease-in-out;
+}
+
+.container:hover {
+
+    transform: translateX(0vw);
+
+}
+
+.name {}
+
+.iconLink {}
+
+.icon {
+
+    color: white;
+    font-size: 2rem;
+    margin-left: 30%;
+    margin-top: 30%;
+}

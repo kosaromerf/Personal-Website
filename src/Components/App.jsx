@@ -1,6 +1,7 @@
 import Navigation from "./Navigation";
 import styles from "../Styles/App.module.css";
 import welcomeLight from "../assets/welcomeLight.jpeg";
+import Contact from "./Contact";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         experiences.
       </p>
       <Navigation />
+      <Contact />
     </div>
   );
 };

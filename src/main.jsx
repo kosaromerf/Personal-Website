@@ -26,10 +26,6 @@ const router = createBrowserRouter([
     path: "/skills",
     element: <Skills />,
   },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
 ]);
 //-----------------------------------------------
 

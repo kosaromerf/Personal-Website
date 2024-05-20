@@ -16,6 +16,7 @@ import jQuery from "../assets/icons/jQuery.png";
 import Git from "../assets/icons/Git.png";
 import GitHub from "../assets/icons/GitHub.png";
 import VSCode from "../assets/icons/VSCode.png";
+import Contact from "./Contact";
 
 const Skills = () => {
   return (
@@ -47,6 +48,7 @@ const Skills = () => {
         </div>
       </div>
       <Navigation />
+      <Contact />
     </div>
   );
 };

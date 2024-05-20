@@ -1,7 +1,7 @@
 .skillContainer {
-    border: 3px solid gray;
+
     width: 80%;
-    height: 50%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,19 +21,40 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .core ul,
 .secondary ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    border: 2px solid gray;
+    border: 2px solid #f0f0f0;
+    border-radius: 20px;
     width: 80%;
+    flex-wrap: wrap;
 }
 
 .skillContainer li {
+    color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     list-style: none;
+    margin: 4%;
+    transition: 0.2s ease-in-out;
+}
+
+.skillContainer li:hover {
+    transform: scale(1.1);
+    font-weight: 900;
+}
+
+.skillContainer img {
+    width: 40px;
+    height: 40px;
+    margin: 4%
 }
 
 

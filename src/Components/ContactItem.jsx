@@ -4,10 +4,10 @@ import styles from "../Styles/ContactItem.module.css";
 const ContactItem = ({ Component, name, destination }) => {
   return (
     <div className={styles.container}>
+      <Component className={styles.icon} />
       <a href={destination} className={styles.iconLink} title={name}>
-        <Component className={styles.icon} />
+        <p className={styles.name}>{name}</p>
       </a>
-      <p className={styles.name}>{name}</p>
     </div>
   );
 };

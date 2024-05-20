@@ -20,14 +20,21 @@ const Card = ({ images, name, content, codeLink, liveLink }) => {
         className={styles.cardImg}
         onClick={openModal}
       />
-      <h4 className={styles.cardName}>{name}</h4>
-      <p className={styles.cardContent}>{content}</p>
-      <a href={codeLink} className={styles.codeLink}>
-        GitHub
-      </a>
-      <a href={liveLink} className={styles.liveLink}>
-        Live
-      </a>
+      <div className={styles.content}>
+        <h4 className={styles.cardName}>{name}</h4>
+        <p className={styles.cardContent}>{content}</p>
+      </div>
+      <div className={styles.links}>
+        <a href={codeLink} className={styles.codeLink}>
+          GitHub
+        </a>
+        <a href={liveLink} className={styles.liveLink}>
+          Live
+        </a>
+        <button className={styles.modalOpen} onClick={openModal}>
+          Images
+        </button>
+      </div>
       <div>
         <Modal
           images={images}

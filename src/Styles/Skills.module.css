@@ -1,7 +1,5 @@
 .skillContainer {
-
     width: 80%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +8,7 @@
 
 .core h4,
 .secondary h4 {
-    margin-bottom: 2%;
+    margin: 2%;
     font-size: 2rem;
     color: white;
 }
@@ -47,13 +45,14 @@
 }
 
 .skillContainer li:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     font-weight: 900;
 }
 
 .skillContainer img {
-    width: 40px;
-    height: 40px;
+    width: 3vw;
+    min-width: 30px;
+    height: auto;
     margin: 4%
 }
 
@@ -74,6 +73,13 @@
 @media only screen and (min-width:600px) and (max-width: 767px) {
 
     /* tablet */
+
+
+}
+
+@media only screen and (min-width:768px) and (max-width: 991px) {
+
+    /* small laptop */
 
 
 }

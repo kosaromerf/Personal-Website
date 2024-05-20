@@ -18,56 +18,50 @@
 @media only screen and (max-width:480px) {
 
     /* phone */
-
     .welcomeText {
         font-size: 1rem;
         color: aliceblue;
         width: 70%;
         text-align: center;
-
     }
-
-
 }
 
 @media only screen and (min-width:480px) and (max-width: 599px) {
 
     /* tablet or big phone */
-
-
     .welcomeText {
         font-size: 1.2rem;
         color: aliceblue;
         width: 70%;
         text-align: center;
-
-
     }
 }
 
-@media only screen and (min-width:600px) and (max-width: 767px) {
 
-    /* tablet */
+@media only screen and (max-height:480px) {
 
+    /* ultra short screen */
 
-}
+    .welcomeText {
+        font-size: 1rem;
+        width: 70%;
+        text-align: center;
+    }
 
+    .main img {
+        display: none;
 
-
-@media only screen and (min-width:992px) and (max-width: 1199px) {
-
-    /* laptop */
-
-
-}
-
-@media only screen and (min-width:1200px) and (max-width: 1919px) {
-    /* desktopscreen */
-
+    }
 
 }
 
-@media only screen and (min-width:1920px) {
-    /*  big desktops or highdef */
+@media only screen and (min-height:480px) and (max-height: 599px) {
+
+    /*short screen */
+    .welcomeText {
+        font-size: 1rem;
+        width: 70%;
+        text-align: center;
+    }
 
 }

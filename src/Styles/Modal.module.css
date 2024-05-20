@@ -5,7 +5,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
     width: 75%;
     height: 72%;
     display: grid;
-    grid-template-rows: 10fr 1fr 1fr;
+    grid-template-rows: 8fr 1fr 1fr;
 
 }
 
@@ -39,7 +39,7 @@
 .decBtn {
     position: absolute;
     height: 100%;
-    width: 3%;
+    width: 5%;
     z-index: 20;
     text-align: center;
     justify-content: center;
@@ -112,4 +112,94 @@
 .closeBtn:hover {
     transform: scale(1.1);
     font-weight: 900;
+}
+
+
+@media only screen and (max-width:480px) {
+
+    /* phone */
+    .container {
+        width: 100%;
+        height: 72%;
+    }
+
+    .displayImage {
+        width: 100%;
+        height: 65vh;
+    }
+
+    .incBtn,
+    .decBtn {
+        width: 10%;
+    }
+
+    .slides {
+        height: 6vh;
+        overflow: hidden;
+    }
+
+    .modalName {
+        font-size: 1.3rem;
+
+    }
+
+
+    .closeBtn {
+        font-size: 3rem;
+    }
+
+}
+
+@media only screen and (min-width:480px) and (max-width: 599px) {
+
+    /* tablet or big phone */
+    .container {
+        width: 100%;
+    }
+
+    .displayImage {
+        width: 100%;
+        height: 55vh;
+    }
+
+    .slides {
+        height: 8vh;
+    }
+
+    .incBtn,
+    .decBtn {
+        width: 8%;
+
+    }
+
+}
+
+@media only screen and (min-width:600px) and (max-width: 767px) {
+
+    /* tablet */
+    .slides {
+        height: 8vh;
+    }
+
+    .incBtn,
+    .decBtn {
+        width: 9%;
+
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width: 991px) {
+
+    /* small laptop */
+    .slides {
+        height: 10vh;
+    }
+
+
+    .incBtn,
+    .decBtn {
+        width: 9%;
+
+    }
 }

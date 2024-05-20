@@ -1,6 +1,4 @@
 .work {
-    display: flex;
-    flex-direction: column;
     height: 100vh;
 }
 
@@ -26,36 +24,59 @@
 @media only screen and (max-width:480px) {
 
     /* phone */
-
+    .container {
+        width: 90vw;
+        height: 60vh;
+        display: grid;
+        grid-template-rows: 18vh 18vh 18vh;
+        grid-template-columns: 1fr;
+        gap: 3vh;
+        overflow: hidden;
+    }
 }
 
 @media only screen and (min-width:480px) and (max-width: 599px) {
 
     /* tablet or big phone */
-
+    .container {
+        width: 90vw;
+        height: 60vh;
+        display: grid;
+        grid-template-rows: 18vh 18vh 18vh;
+        grid-template-columns: 1fr;
+        gap: 3vh;
+        overflow: hidden;
+    }
 }
 
 @media only screen and (min-width:600px) and (max-width: 767px) {
 
     /* tablet */
+    .container {
+        width: 90vw;
+        height: 60vh;
+        display: grid;
+        grid-template-rows: 18vh 18vh 18vh;
+        grid-template-columns: 1fr;
+        gap: 3vh;
+        overflow: hidden;
+    }
 
-
-}
-
-@media only screen and (min-width:992px) and (max-width: 1199px) {
-
-    /* laptop */
-
-
-}
-
-@media only screen and (min-width:1200px) and (max-width: 1919px) {
-    /* desktopscreen */
 
 
 }
 
-@media only screen and (min-width:1920px) {
-    /*  big desktops or highdef */
+@media only screen and (min-width:768px) and (max-width: 991px) {
+
+    /* small laptop */
+    .container {
+        width: 90vw;
+        height: 60vh;
+        display: grid;
+        grid-template-rows: 18vh 18vh 18vh;
+        grid-template-columns: 1fr;
+        gap: 3vh;
+        overflow: hidden;
+    }
 
 }

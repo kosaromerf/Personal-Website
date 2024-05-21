@@ -1,11 +1,9 @@
-import Navigation from "./Navigation";
-import styles from "../Styles/App.module.css";
+import styles from "../Styles/Home.module.css";
 import welcomeLight from "../assets/welcomeLight.jpeg";
-import Contact from "./Contact";
 
 const App = () => {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} id="homePage">
       <img src={welcomeLight} alt="welcome image of a penguan coding" />
       <p className={styles.welcomeText}>
         I'm Omer Kosar, a budding Frontend Web developer with a Mechanical
@@ -14,8 +12,6 @@ const App = () => {
         innovative projects, I'm on a quest to create impactful digital
         experiences.
       </p>
-      <Navigation />
-      <Contact />
     </div>
   );
 };

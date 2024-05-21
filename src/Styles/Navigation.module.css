@@ -5,6 +5,9 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 5%;
+    justify-self: center;
+    left: 15vw;
+    position: relative;
 }
 
 

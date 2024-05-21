@@ -16,11 +16,10 @@ import jQuery from "../assets/icons/jQuery.png";
 import Git from "../assets/icons/Git.png";
 import GitHub from "../assets/icons/GitHub.png";
 import VSCode from "../assets/icons/VSCode.png";
-import Contact from "./Contact";
 
 const Skills = () => {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} id="skillPage">
       <div className={styles.skillContainer}>
         <div className={styles.core}>
           <h4>Core Skills</h4>
@@ -47,8 +46,6 @@ const Skills = () => {
           </ul>
         </div>
       </div>
-      <Navigation />
-      <Contact />
     </div>
   );
 };

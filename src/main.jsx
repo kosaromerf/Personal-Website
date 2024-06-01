@@ -20,10 +20,19 @@ const routeVariants = {
   in: { opacity: 1 },
   out: { opacity: 0 },
 };
+const navigationMove = {
+  in: { y: -20, opacity: 1 },
+  out: { y: 0, opacity: 0 },
+};
 
 const transition = {
-  duration: 0.5,
-  delay: 0.3,
+  duration: 0.3,
+  delay: 0.5,
+};
+
+const transition2 = {
+  duration: 0.3,
+  delay: 0.2,
 };
 
 const AnimatedRoutes = () => {
@@ -78,22 +87,33 @@ const AnimatedRoutes = () => {
 };
 
 const PageWrapper = ({ children }) => (
-  <motion.div
-    variants={routeVariants}
-    initial="out"
-    animate="in"
-    exit="out"
-    transition={transition}
-    style={{ flexGrow: 1 }}
-  >
-    {children}
-  </motion.div>
+  <>
+    <motion.div
+      variants={routeVariants}
+      initial="out"
+      animate="in"
+      exit="out"
+      transition={transition}
+      style={{ flexGrow: 1 }}
+    >
+      {children}
+    </motion.div>
+    <motion.div
+      variants={navigationMove}
+      initial="out"
+      animate="in"
+      exit="out"
+      transition={transition2}
+      style={{ flexGrow: 1 }}
+    >
+      <Navigation />
+    </motion.div>
+  </>
 );
 
 const App = () => (
   <div className="app-container">
     <AnimatedRoutes />
-    <Navigation />
     <Contact />
   </div>
 );

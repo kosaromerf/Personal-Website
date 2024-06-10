@@ -5,16 +5,8 @@
     right: 0%;
     display: flex;
     flex-direction: column;
+    width: 2.4em
 }
-
-.contactContainer h4 {
-    display: none
-}
-
-
-
-
-
 
 .mailIcon {
     padding-left: 5px;
@@ -34,6 +26,7 @@
     display: none;
     position: absolute;
     transition: 1s ease-in-out;
+
 }
 
 
@@ -46,6 +39,7 @@
     bottom: 2rem;
     right: 2rem;
     padding: 10px;
+
 
 }
 
@@ -64,16 +58,22 @@
 
 }
 
-@media only screen and (min-width:480px) and (max-width: 599px) {
+@media only screen and (min-width:480px) {
 
     /* tablet or big phone */
+    .contactContainer {
+
+        width: 3em
+    }
 
 }
 
 @media only screen and (min-width:600px) and (max-width: 767px) {
 
     /* tablet */
-
+    .contactContainer {
+        width: 3.2em
+    }
 
 }
 

@@ -2,19 +2,20 @@
     display: flex;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 0;
+
     justify-content: space-between;
     width: 12rem;
+    height: 3rem;
     padding: 10px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    transform: translateX(8.5rem);
     transition: 0.5s ease-in-out;
+
 }
 
 .container:hover {
 
-    transform: translateX(0vw);
+    transform: translateX(-8.8em);
     background-color: black;
 }
 
@@ -22,16 +23,18 @@
     font-size: 1.5rem;
     color: #f0f0f0;
     text-decoration: none;
+
 }
 
 .iconLink {
     text-decoration: none;
+    padding-right: 5%;
+
 }
 
 .icon {
     color: #f0f0f0;
     font-size: 2rem;
-
 }
 
 
@@ -39,18 +42,25 @@
 
     /* phone */
     .container {
-        width: 8rem;
         padding: 10px;
-        transform: translateX(5.5rem);
     }
-
 
     .name {
         font-size: 1rem;
     }
 
-
     .icon {
         font-size: 1.3rem;
     }
+
+
+    .container {
+        width: 10rem;
+    }
+
+    .container:hover {
+        transform: translateX(-6.8em);
+    }
+
+
 }

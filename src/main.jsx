@@ -21,8 +21,8 @@ const routeVariants = {
   out: { opacity: 0 },
 };
 const navigationMove = {
-  in: { y: -20, opacity: 1 },
-  out: { y: 0, opacity: 0 },
+  in: { y: 0, opacity: 1 },
+  out: { y: 20, opacity: 0 },
 };
 
 const transition = {

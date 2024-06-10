@@ -1,67 +1,63 @@
-.welcomeText {
-    font-size: 1.3rem;
-    color: aliceblue;
-    width: 70%;
-    text-align: center;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    margin-top: 5vh;
+    padding: 0 7%;
 }
 
 .main img {
-    max-width: 300px;
-    width: 30vw;
+    max-width: 250px;
+    width: 50vw;
     border-radius: 50%;
     outline: green solid 4px;
-    margin-bottom: 5%;
+    margin-bottom: 5vh;
 
 }
 
-
-@media only screen and (max-width:480px) {
-
-    /* phone */
-    .welcomeText {
-        font-size: 1rem;
-        color: aliceblue;
-        width: 70%;
-        text-align: center;
-    }
+.welcomeText {
+    font-size: 1rem;
+    color: #f0f0f0ee;
+    text-align: center;
+    margin-bottom: 5vh;
 }
 
-@media only screen and (min-width:480px) and (max-width: 599px) {
+
+
+@media only screen and (min-width:480px) {
 
     /* tablet or big phone */
     .welcomeText {
         font-size: 1.2rem;
-        color: aliceblue;
-        width: 70%;
-        text-align: center;
-    }
-}
-
-
-@media only screen and (max-height:480px) {
-
-    /* ultra short screen */
-
-    .welcomeText {
-        font-size: 1rem;
-        width: 70%;
-        text-align: center;
-    }
-
-    .main img {
-        display: none;
-
     }
 
 }
 
-@media only screen and (min-height:480px) and (max-height: 599px) {
 
-    /*short screen */
+
+@media only screen and (min-width:992px) {
+
+    /* laptop */
+
+
+
+
+}
+
+@media only screen and (min-width:1200px) {
+
+    /* desktopscreen */
     .welcomeText {
-        font-size: 1rem;
-        width: 70%;
-        text-align: center;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        padding: 0 15%;
     }
+
+}
+
+@media only screen and (min-width:1920px) {
+    /*  big desktops or highdef */
 
 }

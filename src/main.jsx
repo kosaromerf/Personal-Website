@@ -22,7 +22,7 @@ const routeVariants = {
 };
 const navigationMove = {
   in: { y: 0, opacity: 1 },
-  out: { y: 20, opacity: 0 },
+  out: { y: 5, opacity: 0 },
 };
 
 const transition = {

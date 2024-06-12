@@ -5,9 +5,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 3vh;
-    border: 1px dashed red;
-    margin-bottom: 10%;
+
+    margin-bottom: 0%;
     justify-items: center;
+    align-items: center;
 
 }
 

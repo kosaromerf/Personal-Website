@@ -6,6 +6,8 @@
     height: 60vh;
     margin-top: 5vh;
     padding: 0 7%;
+    overflow: scroll;
+
 }
 
 .main img {
@@ -36,16 +38,6 @@
 }
 
 
-
-@media only screen and (min-width:992px) {
-
-    /* laptop */
-
-
-
-
-}
-
 @media only screen and (min-width:1200px) {
 
     /* desktopscreen */
@@ -54,10 +46,5 @@
         line-height: 2rem;
         padding: 0 15%;
     }
-
-}
-
-@media only screen and (min-width:1920px) {
-    /*  big desktops or highdef */
 
 }

@@ -13,10 +13,12 @@
 }
 
 .container {
-    width: 75%;
+    width: 100%;
     height: 72%;
-    display: grid;
-    grid-template-rows: 8fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -25,21 +27,20 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 100%
+    height: fit-content;
+    margin-bottom: 5vh;
 }
 
 .displayImage {
-    object-fit: cover;
-    width: 75vw;
-    height: 55vh;
-
+    object-fit: contain;
+    width: 100vw;
 }
 
 .incBtn,
 .decBtn {
     position: absolute;
     height: 100%;
-    width: 5%;
+    width: 10%;
     z-index: 20;
     text-align: center;
     justify-content: center;
@@ -60,7 +61,6 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-
 .incBtn:hover,
 .decBtn:hover {
     background-color: rgba(0, 0, 0, 0.7);
@@ -73,11 +73,12 @@
 }
 
 .slides {
-    height: 15vh;
+    height: 6vh;
     object-fit: cover;
     border: 2px solid rgba(255, 255, 255, 0.7);
     border-top-width: 4px;
     transition: 0.3 ease-in-out;
+    overflow: hidden;
 }
 
 .slides:hover {
@@ -85,121 +86,92 @@
 }
 
 .modalName {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
     padding-bottom: 1%;
+    margin: 2vh 1vw 1vh 1vw;
 }
 
 .modalContent {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
     padding-bottom: 2%;
+    margin: 1vh 1vw 1vh 1vw;
 }
 
 .closeBtn {
     position: absolute;
     top: 5%;
     right: 5%;
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
     background-color: transparent;
     border: none;
     transition: 0.3s ease-in-out;
 }
 
-
 .closeBtn:hover {
     transform: scale(1.1);
     font-weight: 900;
 }
 
-
-@media only screen and (max-width:480px) {
-
-    /* phone */
-    .container {
-        width: 100%;
-        height: 72%;
+@media only screen and (min-width:600px) {
+    .slides {
+        height: 8vh;
     }
+}
+
+@media only screen and (min-width:991px) {
 
     .displayImage {
-        width: 100%;
-        height: 65vh;
-    }
 
-    .incBtn,
-    .decBtn {
-        width: 10%;
+        width: 90vw;
+        max-height: 50vh;
     }
 
     .slides {
-        height: 6vh;
-        overflow: hidden;
+        height: 15vh;
     }
 
     .modalName {
-        font-size: 1.3rem;
-
+        font-size: 1.5rem;
     }
-
 
     .closeBtn {
-        font-size: 3rem;
+        top: 2%;
+        right: 2%;
     }
-
 }
 
-@media only screen and (min-width:480px) and (max-width: 599px) {
+@media only screen and (max-height:500px) {
 
-    /* tablet or big phone */
-    .container {
-        width: 100%;
+    .slideContainer {
+        display: none;
+    }
+
+    .modalName {
+        display: none;
+    }
+
+    .modalContent {
+        display: none;
+    }
+
+    .closeBtn {
+        display: none;
+    }
+
+    .displayImageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0vh;
     }
 
     .displayImage {
-        width: 100%;
-        height: 55vh;
-    }
-
-    .slides {
-        height: 8vh;
-    }
-
-    .incBtn,
-    .decBtn {
-        width: 8%;
-
-    }
-
-}
-
-@media only screen and (min-width:600px) and (max-width: 767px) {
-
-    /* tablet */
-    .slides {
-        height: 8vh;
-    }
-
-    .incBtn,
-    .decBtn {
-        width: 9%;
-
-    }
-
-}
-
-@media only screen and (min-width:768px) and (max-width: 991px) {
-
-    /* small laptop */
-    .slides {
-        height: 10vh;
-    }
-
-
-    .incBtn,
-    .decBtn {
-        width: 9%;
-
+        object-fit: contain;
+        height: fit-content;
+        max-height: 100vh;
     }
 }

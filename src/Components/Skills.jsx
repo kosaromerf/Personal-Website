@@ -1,5 +1,4 @@
 import React from "react";
-import Navigation from "./Navigation";
 import ListItem from "./ListItem";
 import styles from "../Styles/Skills.module.css";
 import HTML5 from "../assets/icons/HTML5.png";

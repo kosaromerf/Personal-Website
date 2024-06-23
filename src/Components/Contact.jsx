@@ -5,31 +5,42 @@ import { FiGithub } from "react-icons/fi";
 import { TbBrandFiverr } from "react-icons/tb";
 import { SiFreelancer } from "react-icons/si";
 import { FaUpwork } from "react-icons/fa6";
-import { MdOutlineContentCopy } from "react-icons/md";
 import styles from "../Styles/Contact.module.css";
 import ContactItem from "./ContactItem";
 
 const Contact = () => {
   return (
     <div className={styles.contactContainer}>
-      <ContactItem Component={TfiEmail} name={"E-Mail"} destination={"#"} />
+      <ContactItem
+        Component={TfiEmail}
+        name={"E-Mail"}
+        destination={"mailto:kosaromerf@gmail.com"}
+      />
       <ContactItem
         Component={GrLinkedinOption}
         name={"LinkedIn"}
-        destination={"#"}
+        destination={"https://www.linkedin.com/in/kosaromerf/"}
       />
-      <ContactItem Component={FiGithub} name={"GitHub"} destination={"#"} />
+      <ContactItem
+        Component={FiGithub}
+        name={"GitHub"}
+        destination={"https://github.com/kosaromerf"}
+      />
       <ContactItem
         Component={TbBrandFiverr}
         name={"Fiverr"}
-        destination={"#"}
+        destination={"https://www.fiverr.com/kosaromer"}
       />
       <ContactItem
         Component={SiFreelancer}
         name={"Freelancer"}
-        destination={"#"}
+        destination={"https://www.freelancer.com/u/KosarOmer?sb=t"}
       />
-      <ContactItem Component={FaUpwork} name={"Upwork"} destination={"#"} />
+      <ContactItem
+        Component={FaUpwork}
+        name={"Upwork"}
+        destination={"https://www.upwork.com/freelancers/~015701b0dec58e4016"}
+      />
     </div>
   );
 };

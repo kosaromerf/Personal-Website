@@ -1,16 +1,9 @@
 import React from "react";
 import styles from "../Styles/Modal.module.css";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
-const Modal = ({
-  images,
-  name,
-  content,
-  codeLink,
-  liveLink,
-  isOpen,
-  closeModal,
-}) => {
+const Modal = ({ images, name, content, isOpen, closeModal }) => {
   const [imageIndex, setImageIndex] = useState(0);
 
   const changeImageInc = () => {
@@ -57,7 +50,7 @@ const Modal = ({
           </a>
           <img
             src={images[imageIndex]}
-            alt="descriton"
+            alt="descripton"
             className={styles.displayImage}
           />
           <a onClick={changeImageDec} className={styles.decBtn}>
@@ -73,6 +66,14 @@ const Modal = ({
       </button>
     </div>
   );
+};
+
+Modal.propTypes = {
+  images: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  closeModal: PropTypes.func.isRequired,
 };
 
 export default Modal;

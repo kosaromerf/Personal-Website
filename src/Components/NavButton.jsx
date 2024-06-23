@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../Styles/NavButton.module.css";
+import PropTypes from "prop-types";
 
 const NavButton = ({ to, content }) => {
   return (
@@ -8,6 +9,11 @@ const NavButton = ({ to, content }) => {
       {content}
     </Link>
   );
+};
+
+NavButton.propTypes = {
+  to: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
 };
 
 export default NavButton;

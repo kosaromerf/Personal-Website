@@ -5,11 +5,8 @@ import Modal from "./Modal";
 
 const Card = ({ images, name, content, codeLink, liveLink }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const closeModal = () => {
-    setIsOpen(false);
-  };
-  const openModal = () => {
-    setIsOpen(true);
+  const switchModal = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -18,7 +15,7 @@ const Card = ({ images, name, content, codeLink, liveLink }) => {
         src={images[0]}
         alt="projectimages"
         className={styles.cardImg}
-        onClick={openModal}
+        onClick={switchModal}
       />
       <div className={styles.content}>
         <h4 className={styles.cardName}>{name}</h4>
@@ -31,7 +28,7 @@ const Card = ({ images, name, content, codeLink, liveLink }) => {
         <a href={liveLink} className={styles.liveLink}>
           Live
         </a>
-        <button className={styles.modalOpen} onClick={openModal}>
+        <button className={styles.modalOpen} onClick={switchModal}>
           Images
         </button>
       </div>
@@ -43,7 +40,7 @@ const Card = ({ images, name, content, codeLink, liveLink }) => {
           codeLink={"#"}
           liveLink={"#"}
           isOpen={isOpen}
-          closeModal={closeModal}
+          closeModal={switchModal}
         />
       </div>
     </div>

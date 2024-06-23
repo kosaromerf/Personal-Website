@@ -39,10 +39,12 @@
 }
 
 .collapseText {
+    display: flex;
     width: 90%;
     font-size: 0.9rem;
     color: #e0e0e0aa;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 2vh;
 
 }
@@ -64,18 +66,27 @@
 
 }
 
-::-webkit-scrollbar {
-    width: 6px;
-    background-color: #30303033;
-}
-
 ::-webkit-scrollbar-thumb {
     background: #fafafa22;
     border-radius: 6px;
 }
 
-::-webkit-scrollbar:horizontal {
+::-webkit-scrollbar {
+    background-color: #30303033;
+}
+
+.collapseText::-webkit-scrollbar {
     width: 0;
+    height: 0;
+}
+
+.timelineContainer::-webkit-scrollbar:horizontal {
+    width: 0;
+    height: 0;
+}
+
+.timelineContainer::-webkit-scrollbar:vertical {
+    width: 6px;
     height: 0;
 }
 

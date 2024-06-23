@@ -6,22 +6,34 @@
     height: 70vh;
     margin-top: 3vh;
     width: 100vw;
-    overflow: scroll;
+
 }
 
 .container {
-    width: 90vw;
+    width: 91vw;
     height: 70vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2vh;
     margin-bottom: 3vh;
+    overflow: scroll;
 }
 
 .projects {
     font-size: 3rem;
     color: #f0f0f0;
     margin-bottom: 1rem;
+}
+
+
+.container::-webkit-scrollbar {
+    width: 0;
+}
+
+.container::-webkit-scrollbar:horizontal {
+
+    height: 6px;
 }
 
 
@@ -32,12 +44,10 @@
     /* small laptop */
     .container {
         flex-direction: row;
+        width: 80%;
         gap: 2vh;
-        margin-bottom: 3vh;
-        width: 70%;
-        min-width: 80vw;
-        justify-content: space-between;
-        align-items: center;
+        overflow-x: scroll;
+
     }
 
 }

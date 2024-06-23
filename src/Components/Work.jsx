@@ -13,7 +13,7 @@ const Work = () => {
     <div className={styles.main} id="workPage">
       <h2 className={styles.projects}>Projects</h2>
       <section className={styles.container}>
-        <Card
+        {/*         <Card
           images={images}
           name={"E-Commerce for Local Business"}
           content={
@@ -21,8 +21,8 @@ const Work = () => {
           }
           codeLink={"#"}
           liveLink={"#"}
-        />
-        <Card
+        /> */}
+        {/*         <Card
           images={images}
           name={"Inventory Application"}
           content={
@@ -30,15 +30,15 @@ const Work = () => {
           }
           codeLink={"#"}
           liveLink={"#"}
-        />
+        /> */}
         <Card
           images={images}
           name={"Profesional Personal Website"}
           content={
             "A professional website to showcase the skills and portfolio of a frontend web developer."
           }
-          codeLink={"#"}
-          liveLink={"#"}
+          codeLink={"https://github.com/kosaromerf/Portfolio"}
+          liveLink={"https://portfolio-kosaromerfs-projects.vercel.app/"}
         />
       </section>
     </div>

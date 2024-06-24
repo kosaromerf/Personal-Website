@@ -6,66 +6,91 @@ import Highlights from "./Highlights";
 const About = () => {
   const [highlights, setHighlights] = useState([
     {
-      name: "Portfolio Webpage v1",
-      date: "Mar 2023 - Apr 2024",
+      name: "Portfolio Webpage v2",
+      date: "May 2023",
       description:
-        "A website to showcase my skills A website to showcase my skills A website to showcase my skills A website to showcase my skills A website to showcase my skills",
+        "A website to showcase my skills. Improved by React Router and moduler CSS styling",
       isProject: true,
-      urls: "#",
+      urls: "https://personalwebsite-rouge.vercel.app/",
     },
     {
-      name: "React Router",
-      date: "Apr 2023",
-      description: "Getting into routers",
+      name: "Portfolio Webpage v1",
+      date: "May 2023",
+      description:
+        "A website to showcase my skills. Single page, responsive, accesible",
+      isProject: true,
+      urls: "https://portfolio-kosaromerfs-projects.vercel.app/",
+    },
+    {
+      name: '"Front End Development Libraries" course and certification on freeCodeCamp',
+      date: "Apr 2024 - May 2024",
+      description:
+        "Bootstrap, SASS, jQuerry, React and Redux. Very extensive course about different aspects of FrontEnd development from libraies to State management. Created 5 projects to get the certification.",
+      isProject: true,
+      urls: "https://www.freecodecamp.org/certification/OmerFarukKosar/front-end-development-libraries",
+    },
+    {
+      name: '"Relational Database" course and certification on freeCodeCamp',
+      date: "Apr 2024",
+      description:
+        "Learned about using bash commands and databases like SQL. Created 5 projects to get the certification.",
+      isProject: true,
+      urls: "https://www.freecodecamp.org/certification/OmerFarukKosar/relational-database-v8",
+    },
+    {
+      name: '"JavaScript Algorithms and Data Structures (NEW)" course and certification on freeCodeCamp',
+      date: "Mar 2024",
+      description:
+        "New course for JavaScript. Created 5 projects to get the certification.",
+      isProject: true,
+      urls: "https://www.freecodecamp.org/certification/OmerFarukKosar/javascript-algorithms-and-data-structures-v8",
+    },
+    {
+      name: '"React" course in Odin Project',
+      date: "Dec 2023 - Feb 2024",
+      description:
+        "The most popular JavaScript library for building UI. This course includes class and functional components, hooks and state managment in addition to fundementals",
+      isProject: true,
+      urls: "https://github.com/kosaromerf/Odin-Project-Learning-React",
+    },
+    {
+      name: '"Intermediate,Advance HTML and CSS" courses in Odin Project',
+      date: "Agu 2023 - Nov 2023",
+      description:
+        "These two courses gives essential information about Accesiblity and SEO principles in addition to that many neccesary CSS funtinalty like Flexbox, Grid and animations",
+      isProject: true,
+      urls: "https://github.com/kosaromerf/Odin-Project-Learning-Intermediate-HTML-CSS",
+    },
+    {
+      name: '"JavaScript Algorithms and Data Structures" course and certification on freeCodeCamp',
+      date: "Jul 2023",
+      description:
+        "Learned about JavaScript fundementals and two of the most important styles of programing OOP and FP. Created 5 simple projects to get the certification.",
+      isProject: true,
+      urls: "https://www.freecodecamp.org/certification/OmerFarukKosar/javascript-algorithms-and-data-structures",
+    },
+    {
+      name: "Foundations course in Odin Project",
+      date: "Jun 2023 - Jul 2023",
+      description:
+        "Foundations course gives the fundementals of Frontend development. There are many suggested projects.",
+      isProject: true,
+      urls: "https://github.com/kosaromerf/Odin-Project-Learning-Foundations",
+    },
+    {
+      name: '"Responsive Web Desing" course and certification on freeCodeCamp',
+      date: "Jun 2023",
+      description:
+        "Learned about fundementals of Frontend Development. Created 5 simple projects to get the certification.",
+      isProject: true,
+      urls: "https://www.freecodecamp.org/certification/OmerFarukKosar/responsive-web-design",
+    },
+    {
+      name: "Start of the Journey",
+      date: "May 2023",
+      description:
+        "This is the start of my web developer journey. Started to learn about front end usng freeCodeCamp, Odin Project and numerous other tutorials.",
       isProject: false,
-    },
-    {
-      name: "Portfolio Webpage v2",
-      date: "Apr 2023 - May 2024",
-      description: "A website to showcase my skills",
-      isProject: true,
-    },
-    {
-      name: "Portfolio Webpage v2",
-      date: "Apr 2023 - May 2024",
-      description: "A website to showcase my skills",
-      isProject: true,
-    },
-    {
-      name: "Portfolio Webpage v2",
-      date: "Apr 2023 - May 2024",
-      description: "A website to showcase my skills",
-      isProject: true,
-    },
-    {
-      name: "Portfolio Webpage v2",
-      date: "Apr 2023 - May 2024",
-      description: "A website to showcase my skills",
-      isProject: true,
-    },
-    {
-      name: "Portfolio Webpage v2",
-      date: "Apr 2023 - May 2024",
-      description: "A website to showcase my skills",
-      isProject: true,
-    },
-    {
-      name: "Portfolio Webpage v2",
-      date: "Apr 2023 - May 2024",
-      description: "A website to showcase my skills",
-      isProject: true,
-    },
-    {
-      name: "Portfolio Webpage v2",
-      date: "Apr 2023 - May 2024",
-      description: "A website to showcase my skills",
-      isProject: true,
-    },
-    {
-      name: "Portfolio Webpage v2",
-      date: "Apr 2023 - May 2024",
-      description: "A website to showcase my skills",
-      isProject: true,
     },
   ]);
   const [textCollapsed, setTextCollapsed] = useState([false, false]);
@@ -111,25 +136,38 @@ const About = () => {
             {textCollapsed[0] ? "About Me [+]" : "About Me [-]"}
           </button>
           <p className={styles.collapseText} id="txt">
-            si sequi veniam atque eum id esse. Adipisci commodi dicta velit
-            ratione unde, sapiente dolores eius a, recusandae minima consectetur
-            voluptas perspiciatis. Hic, nemo natus non quos ullam autem id quas
-            earum nihil, laboriosam repellat quae minus esse nostrum fugiat ut
-            repudiandae aut necessitatibus maxime voluptate, deserunt libero!
-            Corporis cum eos magnam officiis beatae praesentium rerum! Autem
-            culpa recusandae deserunt molestias obcaecati odio mollitia
-            necessitatibus harum esse! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Temporibus quae dolorem eos necessitatibus beatae.
-            Eum modi nobis debitis ipsum sint a magnam expedita non ea eos culpa
-            saepe maxime adipisci, tempora amet facilis aspernatur asperiores,
-            repellendus ad ab. Est excepturi consequatur culpa sapiente
-            assumenda totam rem, labore quod tempore voluptatum possimus, atque
-            deleniti quam perferendis. Sapiente laudantium officiis dicta
-            exercitationem ducimus, qui pariatur eos omnis eveniet repellat.
-            Debitis, similique modi fuga fugit, eligendi rerum quo eum cumque
-            doloribus quibusdam explicabo deleniti error suscipit? Laudantium
-            aut accusamus voluptatem fugit maiores unde, repellendus, distinctio
-            esse ipsam fuga ducimus molestias ad quisquam nesciunt!
+            My journey into web development began out of a desire to rebuild my
+            career and my life. With a strong passion for building things and a
+            keen analytical mind, I found myself naturally drawn to the world of
+            web development.
+            <br />
+            <br />
+            I originally pursued a career in stock market trading, but after
+            several years, I realized it wasn't the right fit for me. I needed a
+            fresh start, something that combined my love for creating and
+            problem-solving. That's when I decided to dive into web development.
+            Passion for knowledge gave me the push I needed to start learning,
+            and I haven't looked back since.
+            <br />
+            <br />
+            What sets me apart as a web developer is my relentless pursuit of
+            knowledge and my ability to apply what I've learned effectively. I'm
+            a hard worker, and when I'm passionate about something, I immerse
+            myself fully in it. My background in mechanical engineering has
+            honed my problem-solving skills and analytical thinking, both of
+            which are crucial in web development. I believe that the ability to
+            find and assimilate knowledge is one of the most important aspects
+            of web development, given the vast and ever-evolving nature of the
+            field.
+            <br />
+            <br />
+            Long-term, I aspire to build a successful career in web development.
+            While front-end development has been a great starting point, I'm
+            eager to expand my skills. I'm excited about the future and the
+            endless possibilities that web development holds. With my analytical
+            mind, passion for learning, and dedication to creating impactful
+            digital experiences, I am confident in my ability to make
+            significant contributions to the tech industry.
           </p>
         </div>
       </div>

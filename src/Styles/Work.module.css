@@ -27,9 +27,7 @@
 }
 
 
-.container::-webkit-scrollbar {
-    width: 0;
-}
+
 
 .container::-webkit-scrollbar:horizontal {
 

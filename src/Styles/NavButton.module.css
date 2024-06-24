@@ -12,33 +12,24 @@
     justify-content: center;
     align-items: center;
     transition: 0.5s ease-in-out;
-
 }
 
 .navBtn:hover {
     background-color: #f5f6f7dd;
     color: #3c3c64;
-
 }
 
 
 @media only screen and (min-width:600px) {
 
-    /* tablet */
     .navBtn {
         font-size: 1.1rem;
         padding: 1.1rem;
         width: 7rem;
     }
-
-
 }
 
-
-
 @media only screen and (min-width:768px) {
-
-    /* small laptop */
 
     .navBtn {
         font-size: 1.2rem;
@@ -47,32 +38,11 @@
     }
 }
 
-@media only screen and (min-width:992px) and (max-width: 1199px) {
-
-    /* laptop */
-
-
-}
-
-@media only screen and (min-width:1200px) and (max-width: 1919px) {
-    /* desktopscreen */
-
-
-}
-
-@media only screen and (min-width:1920px) {
-    /*  big desktops or highdef */
-
-}
-
 @media only screen and (max-height:600px) {
 
-    /* tablet */
     .navBtn {
         font-size: 0.8rem;
         padding: 0.8rem;
         width: 5rem;
     }
-
-
 }

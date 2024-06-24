@@ -6,7 +6,6 @@
     height: 60vh;
     margin-top: 3vh;
     width: 100vw;
-
 }
 
 .skillContainer {
@@ -17,7 +16,6 @@
     width: 100%;
     overflow: scroll;
     padding-bottom: 10px;
-
 }
 
 .core h4,
@@ -80,50 +78,4 @@
     width: 2vw;
     min-width: 24px;
     height: auto;
-}
-
-
-
-@media only screen and (max-height:780px) {
-
-    /* phone */
-
-}
-
-@media only screen and (min-width:480px) and (max-width: 599px) {
-
-    /* tablet or big phone */
-
-}
-
-@media only screen and (min-width:600px) and (max-width: 767px) {
-
-    /* tablet */
-
-
-}
-
-@media only screen and (min-width:768px) and (max-width: 991px) {
-
-    /* small laptop */
-
-
-}
-
-@media only screen and (min-width:992px) and (max-width: 1199px) {
-
-    /* laptop */
-
-
-}
-
-@media only screen and (min-width:1200px) and (max-width: 1919px) {
-    /* desktopscreen */
-
-
-}
-
-@media only screen and (min-width:1920px) {
-    /*  big desktops or highdef */
-
 }

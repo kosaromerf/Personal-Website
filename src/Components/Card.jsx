@@ -37,8 +37,6 @@ const Card = ({ images, name, content, codeLink, liveLink }) => {
           images={images}
           name={name}
           content={content}
-          codeLink={"#"}
-          liveLink={"#"}
           isOpen={isOpen}
           closeModal={switchModal}
         />

@@ -19,16 +19,13 @@
     background-color: transparent;
     margin: 10px;
     position: relative;
-
 }
 
 .email {
     display: none;
     position: absolute;
     transition: 1s ease-in-out;
-
 }
-
 
 .mailIconLink:hover .email,
 .email:hover {
@@ -39,8 +36,6 @@
     bottom: 2rem;
     right: 2rem;
     padding: 10px;
-
-
 }
 
 .iconLink {
@@ -52,45 +47,16 @@
 
 
 
-@media only screen and (max-width:480px) {
-
-    /* phone */
-
-}
-
 @media only screen and (min-width:480px) {
 
-    /* tablet or big phone */
     .contactContainer {
-
         width: 3em
     }
-
 }
 
 @media only screen and (min-width:600px) and (max-width: 767px) {
 
-    /* tablet */
     .contactContainer {
         width: 3.2em
     }
-
-}
-
-@media only screen and (min-width:992px) and (max-width: 1199px) {
-
-    /* laptop */
-
-
-}
-
-@media only screen and (min-width:1200px) and (max-width: 1919px) {
-    /* desktopscreen */
-
-
-}
-
-@media only screen and (min-width:1920px) {
-    /*  big desktops or highdef */
-
 }

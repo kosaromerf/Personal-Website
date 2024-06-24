@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     padding-top: 5vh;
-
 }
 
 .aboutMe {
@@ -13,13 +12,11 @@
     justify-content: start;
     align-items: center;
     width: 100vw;
-
 }
 
 .timeline {
     display: none
 }
-
 
 .header {
     color: #e0e0e0;
@@ -47,7 +44,6 @@
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 2vh;
-
 }
 
 .highlightsContainer {
@@ -56,7 +52,6 @@
     justify-content: start;
     align-items: center;
     width: 100vw;
-
 }
 
 .timelineContainer {
@@ -64,7 +59,6 @@
     flex-direction: column;
     justify-content: start;
     width: 90vw;
-
 }
 
 ::-webkit-scrollbar-thumb {
@@ -93,8 +87,6 @@
 
 @media only screen and (min-width:768px) {
 
-    /* small laptop */
-
     .header {
         font-size: 2.5rem;
         margin-bottom: 2vh;
@@ -119,11 +111,9 @@
 
 @media only screen and (max-width:991px) {
 
-    /* small laptop */
     .aboutContainer {
         overflow: scroll;
     }
-
 }
 
 
@@ -131,8 +121,6 @@
 
 
 @media only screen and (min-width:991px) {
-
-    /* small laptop */
 
     .collapseBtn {
         display: none;
@@ -158,7 +146,6 @@
         width: 100%;
         height: 70vh;
         margin-left: 3vw;
-
     }
 
     .header {
@@ -169,7 +156,6 @@
     }
 
     .collapseText {
-
         width: 100%;
         font-size: 0.9rem;
         color: #e0e0e0aa;
@@ -178,7 +164,6 @@
         overflow: scroll;
         height: 60vh;
         padding: 0 2rem;
-
     }
 
     .highlightsContainer {
@@ -190,7 +175,6 @@
         width: 100%;
         height: 70vh;
         padding-right: 5vw;
-
     }
 
     .timelineContainer {
@@ -202,7 +186,6 @@
         height: 70vh;
         margin-right: 3vw;
         padding: 0 5vw 0 2vw;
-
     }
 
     .timeline {
@@ -214,5 +197,4 @@
         text-align: center;
         padding-right: 5vw;
     }
-
 }

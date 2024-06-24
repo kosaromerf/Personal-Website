@@ -26,7 +26,6 @@
     align-self: center;
     justify-self: center;
     margin-bottom: 0.5rem;
-
 }
 
 .cardContent {
@@ -35,7 +34,6 @@
     align-self: center;
     justify-self: center;
     font-size: 0.8rem;
-
 }
 
 .links {
@@ -44,7 +42,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .codeLink {
@@ -67,7 +64,6 @@
     color: white;
     transform: scale(1.1);
     font-weight: 900;
-
 }
 
 .liveLink {
@@ -88,7 +84,6 @@
     background-color: red;
     transform: scale(1.1);
     font-weight: 900;
-
 }
 
 .modalOpen {
@@ -134,7 +129,6 @@
         border-radius: 20px;
         display: block;
         margin-bottom: 1rem;
-
     }
 
     .cardImg:hover {
@@ -166,7 +160,6 @@
 
     .modalOpen {
         display: none;
-
     }
 }
 
@@ -176,16 +169,13 @@
     .cardBody {
         min-width: 31.3%;
     }
-
 }
 
 
 
 @media only screen and (min-width:1200px) {
 
-    /* desktopscreen */
     .cardBody {
         min-width: 23.5%;
     }
-
 }

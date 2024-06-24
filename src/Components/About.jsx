@@ -7,7 +7,7 @@ const About = () => {
   const [highlights, setHighlights] = useState([
     {
       name: "Portfolio Webpage v2",
-      date: "May 2023",
+      date: "Jun 2024",
       description:
         "A website to showcase my skills. Improved by React Router and moduler CSS styling",
       isProject: true,
@@ -15,7 +15,7 @@ const About = () => {
     },
     {
       name: "Portfolio Webpage v1",
-      date: "May 2023",
+      date: "May 2024",
       description:
         "A website to showcase my skills. Single page, responsive, accesible",
       isProject: true,

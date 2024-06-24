@@ -4,7 +4,6 @@
     align-items: center;
     border-bottom: 0.5px solid #03A06244;
     margin-top: 1vh;
-
 }
 
 .date {
@@ -26,7 +25,6 @@
     color: #e0e0e0;
     padding-left: 1vw;
     padding-bottom: 2%;
-
 }
 
 .description {
@@ -34,11 +32,14 @@
     padding-left: 1vw;
 }
 
+.url {
+    text-decoration: none;
+    color: #03A062;
+}
+
 
 
 @media only screen and (min-width:768px) {
-
-    /* small laptop */
 
     .date {
         font-size: 1.4rem;
@@ -51,14 +52,11 @@
     .description {
         font-size: 1.4rem;
     }
-
 }
 
 
 @media only screen and (min-width:991px) {
 
-    /* small laptop */
-
     .date {
         font-size: 0.9rem;
     }
@@ -70,5 +68,4 @@
     .description {
         font-size: 0.9rem;
     }
-
 }
